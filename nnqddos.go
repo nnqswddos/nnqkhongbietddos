@@ -95,12 +95,12 @@ func getuseragent() string {
 	}
 	browser := choice5[rand.Intn(len(choice5)-1)]
 	if browser == "chrome" {
-		webkit := strconv.Itoa(rand.Intn(599-500) + 500)
-		uwu := strconv.Itoa(rand.Intn(99)) + ".0" + strconv.Itoa(rand.Intn(9999)) + "." + strconv.Itoa(rand.Intn(999))
+		webkit := strconv.Itoa(rand.Intn(9999-500) + 500)
+		uwu := strconv.Itoa(rand.Intn(99)) + ".0" + strconv.Itoa(rand.Intn(9999)) + "." + strconv.Itoa(rand.Intn(9999))
 		return "Mozilla/5.0 (" + os + ") AppleWebKit/" + webkit + ".0 (KHTML, like Gecko) Chrome/" + uwu + " Safari/" + webkit
 	} else if browser == "ie" {
-		uwu := strconv.Itoa(rand.Intn(99)) + ".0"
-		engine := strconv.Itoa(rand.Intn(99)) + ".0"
+		uwu := strconv.Itoa(rand.Intn(9999)) + ".0"
+		engine := strconv.Itoa(rand.Intn(9999)) + ".0"
 		option := rand.Intn(1)
 		var token string
 		if option == 1 {
