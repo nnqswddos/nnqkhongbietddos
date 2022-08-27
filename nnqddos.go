@@ -1,5 +1,5 @@
 /*
-Coded by LeeOn123
+sw
 Please fking code ur script by ur self, kid.
 I changed the random integers range to the max of int32.
 Now 386 systems should work well.
@@ -195,7 +195,7 @@ func flood() {
 			s, err = net.Dial("tcp", addr)
 		}
 		if err != nil {
-			fmt.Println("Web sập chắc rồi muhahah!!!") //When showing this message, it means ur ip got blocked or the target server down.
+			fmt.Println("Lồn Quang lùa gà đó web sập chắc ròi") //When showing this message, it means ur ip got blocked or the target server down.
 		} else {
 			for i := 0; i < 100; i++ {
 				request := ""
